@@ -1,51 +1,59 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'pyDAMPF_Motivus'
 tags:
   - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - AFM simulations online
+  - Atomic Force Microscopy
+  - Polymers
+  - Nanomechanics
+  - nanofibers
+  - hygroscopic materials
+  - WASM
+  - Motivus
+
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0000-0000-0000
-    equal-contrib: true
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
-    equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
-    affiliation: 2
-  - name: Author with no affiliation
-    corresponding: true # (This is how to denote the corresponding author)
-    affiliation: 3
+  - name: Willy Menacho
+    affiliation: 1
+  - name: Horacio V. Guzman
+    affiliation: "2, 3"
+  - name: Cristian Huijse
+    affiliation: 4
+  - name: Pablo Huijse
+    affiliation: 4
+  - name: Sebastian Etchegaray
+    affiliation: 4
+    
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
+ - name: Departamento de Física, Universidad Técnica Federico Santa María, Valparaiso 2390123, Chile
    index: 1
- - name: Institution Name, Country
+ - name: Department of Theoretical Physics, Jo\v zef Stefan Institute, SI-1000 Ljubljana, Slovenia
    index: 2
- - name: Independent Researcher, Country
+ - name: Departamento de F\'isica Te\'orica de la Materia Condensada, Universidad Aut\'onoma de Madrid, E-28049 Madrid, Spain.
    index: 3
-date: 13 August 2017
+ - name: Motivus
+   index: 4
+date: 20 April 2023
 bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
 # https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
+aas-doi: 10.25080/majora-212e5952-01e
+SciPy Conferences
 ---
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+pyDAMPF is a community-oriented Atomic Force Microscopy (AFM) tool, which allows the simulation of the physical properties of materials under varying relative humidity (RH). As shown in the paper by cite \cite{MenachoScipy2022}, an online version is introduced for mass use of the program through the Motivus server, with a much more user-friendly interface, which facilitates interaction with the user both in the use and in the visualization of results. 
+
+Motivus solves two fundamental problems. The first one is associated with the high computational load of its algorithm: using the Motivus engine, the Motivus API sends each simulation case to a worker, a node in charge of solving the simulation and returning the result. Distributing the computation in this way allows to obtain results 200 times faster than a personal computer. 
+
+The second problem is associated with the maintenance and accessibility of the algorithm to other scientists. The pyDAMPF algorithm is hosted in the motivus marketplace which allows other scientists to access its functions using the motivus library in their applications. In this way, they can obtain results in reasonable times, without the need for installations or additional computational resources to those already provided by Motivus.
+
+This article shows the adaptation of the code published by [@MenachoScipy2022] for an online version. The calculation engine is written in Fortran adapted in C for compilation in WASM on Motivus servers running the calculations in a Kubernetes cluster (google) and wrapped in Python with a Jupyterhub interface, even giving the possibility to store the simulations for each user individually \ref{fig1}. This is intended to provide the user with a powerful tool for AFM experiments.
 
 # Statement of need
+
+Esta parte ya no es del paper, es el ejempo que nos da JOSS
 
 `Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
 enables wrapping low-level languages (e.g., C) for speed without losing
