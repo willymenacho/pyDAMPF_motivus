@@ -47,6 +47,8 @@ The second problem is associated with the maintenance and accessibility of the a
 
 This article shows the adaptation of the code published by [@MenachoScipy:2022] for an online version. The calculation engine is written in Fortran adapted in C for compilation in WASM on Motivus servers running the calculations in a Kubernetes cluster (google) and wrapped in Python with a Jupyterhub interface, even giving the possibility to store the simulations for each user individually \ref{fig1}. This is intended to provide the user with a powerful tool for AFM experiments.
 
+![Caption esquema.\label{fig:esquema}](esquema.png){width=20%}
+
 # Statement of need
 
 Esta parte ya no es del paper, es el ejempo que nos da JOSS
