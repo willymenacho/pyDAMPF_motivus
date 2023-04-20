@@ -26,7 +26,7 @@ authors:
 affiliations:
  - name: Departamento de Física, Universidad Técnica Federico Santa María, Valparaiso 2390123, Chile
    index: 1
- - name: Department of Theoretical Physics, Jo\v zef Stefan Institute, SI-1000 Ljubljana, Slovenia
+ - name: Department of Theoretical Physics, Jozef Stefan Institute, SI-1000 Ljubljana, Slovenia
    index: 2
  - name: Departamento de Fisica Teorica de la Materia Condensada, Universidad Autonoma de Madrid, E-28049 Madrid, Spain.
    index: 3
