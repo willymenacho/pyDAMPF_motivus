@@ -35,8 +35,6 @@ affiliations:
 date: 20 April 2023
 bibliography: paper.bib
 
-aas-doi: 10.25080/majora-212e5952-01e
-SciPy Conferences
 ---
 
 # Summary
