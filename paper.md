@@ -28,7 +28,7 @@ affiliations:
    index: 1
  - name: Department of Theoretical Physics, Jo\v zef Stefan Institute, SI-1000 Ljubljana, Slovenia
    index: 2
- - name: Departamento de F\'isica Te\'orica de la Materia Condensada, Universidad Aut\'onoma de Madrid, E-28049 Madrid, Spain.
+ - name: Departamento de Fisica Teorica de la Materia Condensada, Universidad Autonoma de Madrid, E-28049 Madrid, Spain.
    index: 3
  - name: Motivus
    index: 4
