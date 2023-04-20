@@ -45,9 +45,9 @@ Motivus solves two fundamental problems. The first one is associated with the hi
 
 The second problem is associated with the maintenance and accessibility of the algorithm to other scientists. The pyDAMPF algorithm is hosted in the motivus marketplace which allows other scientists to access its functions using the motivus library in their applications. In this way, they can obtain results in reasonable times, without the need for installations or additional computational resources to those already provided by Motivus.
 
-This article shows the adaptation of the code published by [@MenachoScipy:2022] for an online version. The calculation engine is written in Fortran adapted in C for compilation in WASM on Motivus servers running the calculations in a Kubernetes cluster (google) and wrapped in Python with a Jupyterhub interface, even giving the possibility to store the simulations for each user individually \ref{fig1}. This is intended to provide the user with a powerful tool for AFM experiments.
+This article shows the adaptation of the code published by [@MenachoScipy:2022] for an online version. The calculation engine is written in Fortran adapted in C for compilation in WASM on Motivus servers running the calculations in a Kubernetes cluster (google) and wrapped in Python with a Jupyterhub interface, even giving the possibility to store the simulations for each user individually \autoref{fig:esquema}. This is intended to provide the user with a powerful tool for AFM experiments.
 
-![Caption esquema.\label{fig:esquema}](esquema.png){width=20%}
+![Caption esquema.\label{fig:esquema}](esquema.png)
 
 # Statement of need
 
