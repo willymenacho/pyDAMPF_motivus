@@ -35,9 +35,7 @@ affiliations:
 date: 20 April 2023
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi 10.25080/majora-212e5952-01e
+aas-doi: 10.25080/majora-212e5952-01e
 SciPy Conferences
 ---
 
