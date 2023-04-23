@@ -14,24 +14,26 @@ tags:
 authors:
   - name: Willy Menacho
     affiliation: 1
-  - name: Horacio V. Guzman
-    affiliation: "2, 3"
   - name: Cristian Huijse
-    affiliation: 4
+    affiliation: 2
   - name: Pablo Huijse
-    affiliation: 4
+    affiliation: 2
   - name: Sebastian Etchegaray
-    affiliation: 4
+    affiliation: 2
+  - name: Horacio V. Guzman
+    corresponding: true
+    affiliation: "3 , 4"
     
 affiliations:
  - name: Departamento de Física, Universidad Técnica Federico Santa María, Valparaiso 2390123, Chile
    index: 1
- - name: Department of Theoretical Physics, Jozef Stefan Institute, SI-1000 Ljubljana, Slovenia
-   index: 2
- - name: Departamento de Fisica Teorica de la Materia Condensada, Universidad Autonoma de Madrid, E-28049 Madrid, Spain.
-   index: 3
  - name: Motivus
+   index: 2
+ - name: Department of Theoretical Physics, Jozef Stefan Institute, SI-1000 Ljubljana, Slovenia
+   index: 3
+ - name: Departamento de Fisica Teorica de la Materia Condensada, Universidad Autonoma de Madrid, E-28049 Madrid, Spain.
    index: 4
+
 date: 20 April 2023
 bibliography: paper.bib
 
